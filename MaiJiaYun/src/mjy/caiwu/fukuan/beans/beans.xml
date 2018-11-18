@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="wcDao" class="mjy.caiwu.fukuan.dao.impl.Wait_checkDaoImpl"></bean>
+	<bean id="wccDao" class="mjy.caiwu.fukuan.dao.impl.WaitCheckCgDaoImpl"></bean>
+	<bean id="wcsDao" class="mjy.caiwu.fukuan.dao.impl.WaitCheckShopDaoImpl"></bean>
+	
+	
+	<bean id="wcService" class="mjy.caiwu.fukuan.service.impl.Wait_checkServiceImpl">
+		<property name="wcDao" ref="wcDao"></property>
+	</bean>
+	<bean id="wccService" class="mjy.caiwu.fukuan.service.impl.WaitCheckCgServiceImpl">
+		<property name="wccDao" ref="wccDao"></property>
+	</bean>
+	<bean id="wcgService" class="mjy.caiwu.fukuan.service.impl.WaitCheckShopServiceImpl">
+		<property name="wcsDao" ref="wcsDao"></property>
+	</bean> 
+</beans>

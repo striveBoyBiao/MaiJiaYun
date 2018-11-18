@@ -1,0 +1,17 @@
+.chaolian{
+	text-decoration: none;
+}
+.chaolian:HOVER{
+	alert("aaaa");
+ 	text-decoration: none;
+}
+
+.yincang{
+	display: none;
+}
+
+.lastTr{
+	background:#dcdcdc;
+	border:1px solid #dcdcdc;
+	/* style="background:#dcdcdc;border:1px solid #dcdcdc"; */
+}

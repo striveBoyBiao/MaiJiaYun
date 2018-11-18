@@ -1,0 +1,24 @@
+package mjy.kuguan.cangkuxinxi.service;
+
+import java.util.List;
+
+import mjy.kuguan.cangkuxinxi.vo.WarehouseInfoVO;
+
+/*
+ * ²Ö¿â
+ */
+public interface IWarehouseServlet {
+	
+	//Ìí¼Ó²Ö¿âÐÅÏ¢
+	boolean saveWarehouseInfo(WarehouseInfoVO warehouseInfoVO);
+	
+	//É¾³ý²Ö¿âÐÅÏ¢
+	public boolean removeWarehouseInfo(int warehouseId);
+	
+	//ÐÞ¸Ä²Ö¿âÐÅÏ¢
+	boolean updateWarehouseInfo(int warehouseId,String warehouseName);
+	
+	//²éÑ¯²Ö¿âÐÅÏ¢
+	public List<WarehouseInfoVO> queryWarehouseInfo();
+
+}
